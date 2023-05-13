@@ -9,7 +9,7 @@ const ProjectSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ('Not running', 'Running', 'Completed')
+        enum: ['Not Running', 'Running', 'Completed']
     },
     clientId: {
         type: mongoose.Schema.Types.ObjectId, //it's an objectid related to another model using ref
